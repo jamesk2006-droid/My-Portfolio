@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>James Kelvin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body,
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: 'fredoka', sans-serif;
+            margin: 0% !important;
+        }
+
+        main{
+            padding-top: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            justify-content: space-between;
+            background: #ddd;
+        }
+
+        nav h1 {
+            color: #333;
+            font-size: 45px;
+            font-weight: 500;
+        }
+
+        nav ul,
+        li,
+        a {
+            display: flex;
+            gap: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .aboutme {
+            text-align: center;
+            margin:  0;
+        }
+
+        .aboutnav {
+            ok display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: 60%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .aboutnav a {
+            font-size: 18px;
+            color: #333;
+            border: 1px solid #333;
+            padding: 8px 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .aboutnav a:hover {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .aboutme {
+            padding: 50;
+            background-color: #ddd;
+            display: flex;
+            max-width: 100vw;
+            gap: 30px;
+            overflow: hidden;
+            padding: 50px;
+        }
+
+        .profilepiccontainer img {
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .abouttxtcontainer {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 0px 50px;
+            flex: 1;
+            justify-content: center;
+            animation: fadeInFromBottom 1s ease-in-out;
+
+        }
+
+         @keyframes fadeInFromBottom {
+                from {
+                opacity: 0;
+                transform: translateY(30px); 
+                }
+
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+        .abouttxtcontainer p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+            font-weight: 500;
+            flex-grow: 0;
+            text-wrap: none;
+        }
+
+        .abouttxtcontainer h2 {
+            font-size: 50px;
+        }
+
+        .abouttitle span {
+            text-decoration: underline;
+            text-decoration-color: dodgerblue;
+        }
+
+        .more {
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+            background-color: dodgerblue;
+            width: 150px;
+            justify-content: center;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .moreaboutme {
+            background-color: white;
+            padding: 60px 0px;
+        }
+
+        .tab-content {
+            display: none;
+            max-width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tab-content:hover{
+            transform: translateY(-8px);
+            border: 1px solid dodgerblue;
+        }
+
+        .tab-content h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .tab-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .visionmissioncontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+            background: #fff;
+        }
+
+        .missioncontainer,
+        .visioncontainer {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .missioncontainer:hover, .visioncontainer:hover{
+            transform: translateY(-8px);
+            border: 1px solid dodgerblue;
+        }
+
+        .missioncontainer h2,
+        .visioncontainer h2 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .missioncontainer p,
+        .visioncontainer p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+
+            .header{
+                padding: 10px 20px;
+                position: fixed;
+                height: 50px;
+            }
+
+            .header h1{
+                color: dodgerblue;
+            }
+            .mobile-header {
+                display: block;
+                font-size: 40px;
+                color: dodgerblue;
+               
+            }
+
+            .nav-links {
+               display: flex;
+               flex-direction: column;
+               position: absolute;
+               top: 40px;
+               right: 0px;
+               width: 150px;
+               height: 200px !important;
+               background-image: url(images/header-img.png);
+               box-shadow: 0px 2px 2px black;
+               border-radius: 8px;
+               justify-content: center;
+               z-index: 2;
+
+            }
+
+            .hidden {
+                display: none;
+                z-index: 2;
+            }
+
+
+
+            .header li a {
+                display: block;
+                color: dodgerblue;
+                font-weight: normal;
+
+            }
+
+            .header{
+                position: relative;
+                margin: 0;
+                padding 10px 0px;
+            }
+
+            .abouttitle {
+                color: dodgerblue;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+
+            .aboutme {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 0 !important;
+                align-items: center !important;
+            }
+
+            .profilepiccontainer {
+                padding: 0 !important;
+                margin-bottom: 0%;
+                height: 100% !important;
+            }
+
+            .profilepiccontainer img {
+                border-radius: 10px;
+                margin-bottom: 0;
+                height: 100% !important;
+                object-fit: cover;
+                width: 95%;
+            }
+
+            .abouttxtcontainer {
+                padding: 30px;
+            }
+
+            .aboutnav {
+                gap: 10px;
+                background: none;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .moreaboutme {
+                margin-bottom: 0 !important;
+                padding-bottom: 20px !important;
+                margin-top: 0px !important;
+            }
+
+
+            .visionmissioncontainer {
+                display: flex;
+                flex-direction: column;
+                padding-top: 0;
+                align-items: center;
+            }
+
+            .missioncontainer p {
+                text-align: center !important;
+            }
+
+            .visioncontainer p {
+                text-align: center !important;
+                text-wrap: balance;
+            }
+
+            .footeraddress{
+                display: none !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mobile-header {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <h1>JK</h1>
+        <ul class="nav-links hidden">
+            <li><a href="jk.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="mobile-header">&#9776;</span>
+    </nav>
+
+    <main>
+        <section class="aboutme">
+            <div class="profilepiccontainer">
+                <img src="images/profile-pc.png" alt="james kelvin" download>
+            </div>
+            <div class="abouttxtcontainer">
+                <h2 class="abouttitle"><span>About</span> me</h2>
+                <p>
+                    As a web developer, I am passionate about crafting seamless and intuitive digital experiences. My
+                    expertise lies not only in writing clean, efficient code and building robust web applications, but
+                    also in understanding the human element behind every click and scroll.
+                </p>
+                <p>
+                    With a background in psychology, I bring a unique perspective to my work, focusing on user behavior,
+                    cognitive processes, and the emotional impact of design.
+                    I believe that the most effective websites are those that not only function flawlessly but also
+                    resonate deeply with their users, fostering engagement and delivering genuine value. <a
+                        href="about.html" class="more">Get in Touch</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="moreaboutme">
+            <nav class="aboutnav">
+                <a href="#Education" class="active-tab">Education</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Hobby">Interests</a>
+            </nav>
+
+            <div class="tab-content" id="Education" style="display:block;">
+                <h2>Education</h2>
+                <p>
+                    I am currently a final-year student at the University of Port Harcourt, studying
+                    <strong>Educational Psychology, Guidance and Counseling</strong>.
+                    Over the course of my program, I have gained deep insights into human behavior,
+                    learning processes, and the psychology of motivation, which I now integrate into
+                    my work as a web developer and digital strategist.
+                </p>
+                <p>
+                    This unique blend of psychology and technology allows me to approach projects
+                    with an understanding of both human-centered design and technical precision.
+                    As I prepare to graduate, I am actively building the bridge between my academic
+                    foundation and my career aspirations in <strong>Human Resource Management</strong>
+                    and <strong>frontend development</strong>.
+                </p>
+            </div>
+
+            <div class="tab-content" id="Skills">
+                <h2>Skills</h2>
+                <p>
+                    <strong>Frontend Development:</strong> HTML, CSS, JavaScript, responsive design, UI/UX
+                    implementation.<br><br>
+                    <strong>WordPress Development:</strong> Theme customization, plugin integration, website
+                    optimization.<br><br>
+                    <strong>User Experience & Psychology:</strong> Applying cognitive psychology principles to create
+                    user-friendly and engaging designs.<br><br>
+                    <strong>Design & Branding:</strong> Wireframing, prototyping, minimalistic design approach,
+                    brand-focused layouts.<br><br>
+                    <strong>Digital Strategy:</strong> Problem-solving, content structuring, and creating human-centered
+                    digital products.
+                </p>
+            </div>
+
+
+            <div class="tab-content" id="Hobby">
+                <h2>Interests</h2>
+                <p>
+                    Beyond academics and professional development, I dedicate a lot of my free time
+                    to activities that sharpen both my mind and creativity. I enjoy reading books on
+                    psychology, human behavior, and self-development, which continuously inspire me
+                    to understand people better and apply these insights in my work.
+                </p>
+                <p>
+                    I am also passionate about coding and web development, often experimenting with
+                    new tools, frameworks, and design concepts to expand my skill set. Writing is
+                    another outlet I value whether it’s drafting ideas, sharing insights online,
+                    or documenting my learning process, it allows me to express myself clearly and
+                    connect with others.
+                </p>
+                <p>
+                    Outside of tech and learning, I find balance by playing and watching football,
+                    which not only keeps me active but also teaches teamwork and strategy. I also
+                    love exploring emerging technologies and creative ideas that bridge psychology,
+                    design, and innovation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Vision and Mission section -->
+        <section>
+            <div class="visionmissioncontainer">
+                <div class="missioncontainer">
+                    <h2>My Mission</h2>
+                    <p>
+                        To merge psychology and technology, creating user experiences that are not only functional but
+                        also emotionally engaging and meaningful.
+                    </p>
+                </div>
+                <div class="visioncontainer">
+                    <h2>My Vision</h2>
+                    <p>
+                        To become a leading figure in human-centered web development, building products that transform
+                        how people interact with technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section class="footercontent">
+                <div class="footernavs">
+                    <h2 class="footertitle">Quick links</h2>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="jk.html">Home</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="about.html">About</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="service.html">Services</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="contact.html">contact</a></div>
+                </div>
+
+                <div class="footercontactlinks">
+                    <h2 class="footertitle">Socials</h2>
+                    <div class="sociallinkscontainer"><i class="fa fa-whatsapp footerws"></i><a href=""
+                            class="sociallinks">Whatsapp</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-facebook footerfb"></i><a href=""
+                            class="sociallinks"> facebook</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-linkedin footerin"></i><a href=""
+                            class="sociallinks">linkedin</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-instagram footerig"></i><a href=""
+                            class="sociallinks">instagram</a></div>
+                </div>
+
+                <div class="footeraddress">
+                    <h2 class="footertitle">Contact Address</h2>
+                    <div class="addresscontainer"><i class="fa fa-map-marker address"></i><a href=""
+                            class="homeaddress"><strong>Add:</strong>Cornerstone Ozuoba P/H Rivers Nig.</a></div>
+                    <div class="addresscontainer"><i class="fa fa-phone address"></i><a href=""><strong>Phone
+                                Number:</strong> +2347040604118</a></div>
+                    <div class="addresscontainer"><i class="fa fa-envelope address"></i><a
+                            href="mailto:kj4454084@gmail.com"><strong>Email address:</strong> kj4454084@gmail.com</a>
+                    </div>
+                    <div class="addresscontainer"><i class="fa fa-globe address"></i><a
+                            href="https://jameskelvin.com"><Strong>Web Address:</Strong> www.jameskelvin.com</a></div>
+                </div>
+            </section>
+            <div>
+                <p class="copyrighttxt">&COPY James Kelvin 2024</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+</main>
+
+<script>
+    const tabLinks = document.querySelectorAll('.aboutnav a');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.style.display = 'none');
+
+            // Remove active state from all links
+            tabLinks.forEach(tab => tab.classList.remove('active-tab'));
+
+            // Get target ID (remove the #)
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if (target) target.style.display = 'block';
+
+            // Set active class on clicked tab
+            this.classList.add('active-tab');
+        });
+    });
+
+    const hamburger = document.querySelector('.mobile-header');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .about-section {
+  display: flex;             /* places image + text side by side */
+  align-items: stretch;      /* make both equal height */
+  gap: 30px;                 /* spacing between them */
+  max-width: 1000px;         /* center container size */
+  margin: 50px auto;         /* center horizontally */
+  padding: 20px;
+}
+
+.about-image img {
+  width: 300px;              /* fixed width */
+  height: 100%;              /* same height as text */
+  object-fit: cover;         /* crop neatly to fit */
+  border-radius: 12px;       /* rounded corners */
+}
+
+.about-text {
+  flex: 1;                   /* text takes remaining space */
+  background: #f9f9f9;       /* light background for contrast */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="about-section">
+  <!-- Profile Image -->
+  <div class="about-image">
+    <img src="images/profile-pc.png" alt="Profile Picture">
+  </div>
+
+  <!-- About Text -->
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      As a web developer, I am passionate about crafting seamless and intuitive 
+      digital experiences. My expertise lies not only in writing clean, efficient 
+      code and building robust applications, but also in understanding the human 
+      element behind every click and scroll.
+    </p>
+    <p>
+      With a background in psychology, I bring a unique perspective to my work, 
+      focusing on user behavior, cognitive processes, and the emotional impact of design.
+    </p>
+  </div>
+</section>
+
+</body>
+
+</html>

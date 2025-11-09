@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+
+    <style>
+        html, body{
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: fredoka, sans-serif;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px;
+            align-items: center;
+            background: url(images/hero-image.png);
+            background-color: #ddd;
+            background-blend-mode: multiply;
+            
+
+        }
+
+        .logo{
+            font-size: 45px;
+            font-weight: 500;
+            font-family: fredoka;
+        }
+
+        .navul, .headerli, .headerlink{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: fredoka;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(images/hero-image.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #ddd;
+            background-blend-mode: multiply;
+            padding-bottom: 30px !important;
+            margin-bottom: 0px !important;
+            overflow: hidden;
+            height: 100vh;
+            justify-content: center;
+        }
+        .title{
+            color: dodgerblue;
+            font-family: fredoka;
+            font-size: 50px;
+        }
+
+        form{
+            width: 50vw;
+            border: 1px solid #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            background: transparent;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 5px #111111;
+            animation: fadeInFromBottom 1.5s ease-in-out;
+            transition: hover, 1s;
+        }
+
+        form:hover{
+            transform: translateY(-20px);
+            border: 1px solid dodgerblue;
+        }
+
+        
+         @keyframes fadeInFromBottom {
+                from {
+                opacity: 0;
+                transform: translateY(30px); 
+                }
+
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+        label{
+            display: block;
+            margin-top: 20px;
+            color: #111111;
+            font-family: fredoka;
+        }
+
+        input, textarea{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #f9f9f9;
+            margin-top: 5px;
+            resize: none;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+            background: transparent;
+            font-size: 16px;
+            color: #111111;
+            font-family: fredoka;
+        }
+
+        #name{
+            text-transform: capitalize;
+        }
+
+        input:focus, textarea:focus{
+            outline: none;
+            border: 1px solid dodgerblue;
+        }
+
+        textarea{
+            height: 100px !important;
+        }
+
+        input::placeholder, textarea::placeholder{
+            color: #111111;
+            font-family: fredoka;
+            font-size: 16px;
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 10px;
+            width: 10rem;
+            border-radius: 8px;
+            border: 1px solid #f9f9f9;
+            background-color: dodgerblue;
+            color: #f9f9f9;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            font-family: fredoka;
+            cursor: pointer;
+            transition: hover, 0.7s;
+        }
+
+        button:hover{
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+            background-color: #f9f9f9;
+        }
+
+        .container{
+            display: flex;
+            gap: 40px;
+        }
+
+        .ws, .fb, .in, .ig{
+            font-size: 50px;
+            color: #111111;
+        }
+
+        .footerws, .footerin, .footerfb, .footerig, .address{
+            font-size: 30px !important;
+            transition: hover, 0.3s;
+        }
+
+        .ws:hover{
+            color: rgb(37, 211, 102);
+        }
+
+        .fb:hover{
+            color: rgb(24, 119, 242);
+        }
+
+        .in:hover{
+            color: rgb(24, 119, 242);
+        }
+
+        .ig:hover{
+            color: rgb(228, 64, 95);
+        }
+
+
+
+        .linkedincontainer{
+            display: flex;
+            align-items: start;
+            gap: 20px !important;
+        }
+
+        @media(min-width: 768px){
+            .mobile-header{
+                display: none;
+            }
+        }
+
+        @media(max-width: 768px){
+
+            .header{
+                background-image: url(images/hero-image.png);
+                filter: none;
+                background-color: #ddd;
+                background-blend-mode: multiply;
+                height: 50px;
+                padding:  10px 20px;
+            }
+
+            .logo{
+                color: dodgerblue;
+            }
+
+            .mobile-header{
+                font-size: 40px;
+                display: block;
+                color: dodgerblue;
+            }
+
+            .mobile-nav{
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                height: 200px;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                background-image: url(images/hero-image.png);
+                justify-content: center;
+                border-radius: 8px;
+                background-color: #ddd;
+                background-blend-mode: multiply;
+                box-shadow: 0px 2px 2px black;
+                gap: 20px;
+            }
+
+            .navul{
+                display: none;
+            }
+
+            .headerli, .headerlink{
+                color: dodgerblue;
+                font-weight: normal;
+            }
+
+            .title{
+                font-size: 35px;
+                font-weight: 500;
+                text-transform: uppercase;
+
+            }
+
+            form{
+                width: 80vw;
+            }
+
+            label{
+                color: dodgerblue;
+            }
+
+            input, textarea{
+                color: #f9f9f9;
+            }
+
+            input::placeholder, textarea::placeholder{
+                color: #f9f9f9;
+            }
+
+             .ws, .fb, .in, .ig{
+                font-size: 40px;
+             }
+
+             .footeraddress{
+                display: none !important;
+
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <h1 class="logo">JK</h1>
+        <ul class="mobile-nav navul">
+            <li class="headerli"><a href="jk.html" class="headerlink">Home</a></li>
+            <li class="headerli"><a href="about.html" class="headerlink">About</a></li>
+            <li class="headerli"><a href="service.html" class="headerlink">Services</a></li>
+            <li class="headerli"><a href="contact.html" class="headerlink">Contact</a></li>
+        </ul>
+        <span class="mobile-header">&#9776;</span>
+    </nav>
+    <main>
+        <h2 class="title">Contact Me</h2>
+        <form action="mailto:kj4454085@gmail.com">
+
+            <label for="name">Name</label>
+            <input type="name" name="name" id="name" placeholder="Enter your Name">
+            <br>
+
+            <label for="phone number">Phone</label>
+            <input type="tel" name="number" id="phonenumber" placeholder="Enter Phone Number">
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email Address">
+            <br>
+            
+            <label for="message">Message</label>
+            <textarea name="message"  rows="6" placeholder="Enter Your Message"></textarea>
+            <br>
+
+            <button>Submit</button>
+        </form>
+
+    </main>
+     <footer>
+            <section class="footercontent">
+                <div class="footernavs">
+                    <h2 class="footertitle">Quick links</h2>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="jk.html">Home</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="about.html">About</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="service.html">Services</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="contact.html">contact</a></div>
+                </div>
+
+                <div class="footercontactlinks">
+                    <h2 class="footertitle">Socials</h2>
+                    <div class="sociallinkscontainer"><i class="fa fa-whatsapp footerws"></i><a href=""
+                            class="sociallinks">Whatsapp</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-facebook footerfb"></i><a href=""
+                            class="sociallinks"> facebook</a></div>
+                    <div class="linkedincontainer"><i class="fa fa-linkedin footerin"></i><a href=""
+                            class="sociallinks">linkedin</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-instagram footerig"></i><a href=""
+                            class="sociallinks">instagram</a></div>
+                </div>
+
+                <div class="footeraddress">
+                    <h2 class="footertitle">Contact Address</h2>
+                    <div class="addresscontainer"><i class="fa fa-map-marker address"></i><a href=""
+                            class="homeaddress"><strong>Add:</strong> Cornerstone Ozuoba P/H Rivers Nig.</a></div>
+                    <div class="addresscontainer"><i class="fa fa-phone address"></i><a href=""><strong>Phone
+                                Number:</strong> +2347040604118</a></div>
+                    <div class="addresscontainer"><i class="fa fa-envelope address"></i><a
+                            href="mailto:kj4454084@gmail.com"><strong>Email address:</strong> kj4454084@gmail.com</a>
+                    </div>
+                    <div class="addresscontainer"><i class="fa fa-globe address"></i><a
+                            href="https://jameskelvin.com"><Strong>Web Address:</Strong> www.jameskelvin.com</a></div>
+                </div>
+            </section>
+            <div>
+                <p class="copyrighttxt">&COPY 2024<a href="https://jameskelvin.com">James C Kelvin</a></p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.mobile-header');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('navul');
+        });
+        </script>
+</body>
+
+</html>

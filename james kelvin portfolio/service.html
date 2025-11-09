@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>James kelvin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body,
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: fredoka, sans-serif;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        main {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 50px;
+            align-items: center;
+            background-color: #ddd;
+        }
+
+        .logo {
+            font-size: 45px;
+            color: #333;
+            font-weight: 500;
+        }
+
+
+        ul {
+            list-style: disc;
+            padding: 20px;
+        }
+
+        li {
+            display: list-item;
+        }
+
+        .navul,
+        .navlists,
+        .navlinks {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: bold;
+        }
+
+        .hero-page {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-image: url(images/hero-image.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #ddd;
+            background-blend-mode: multiply;
+            margin: 0;
+
+        }
+
+        .hero-cta {
+            background-color: dodgerblue;
+            text-decoration: none;
+            border: solid 1px #fff;
+            padding: 15px;
+            width: 150px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        .headline {
+            font-size: clamp(2rem, 50vw, 3.5rem);
+            line-height: 1.5;
+            max-width: 20ch;
+            margin-bottom: 1rem;
+            word-break: keep-all;
+            color: white;
+            animation: fadeInFromBottom 1.5s ease-in-out;
+        }
+
+
+        .subheading {
+            font-size: 25px;
+            margin-top: 10px;
+            line-height: 1.5;
+            color: #333;
+            width: 50vw;
+            animation: fadeInFromBottom 1.5s ease-in-out;
+        }
+
+         @keyframes fadeInFromBottom {
+                from {
+                opacity: 0;
+                transform: translateY(30px); 
+                }
+
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+
+
+
+        .services {
+            padding: 50px;
+            background-color: white;
+            align-items: center;
+        }
+
+        * .servicetitle {
+            text-align: center;
+            font-size: 45px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: dodgerblue;
+        }
+
+        .serviceintro {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            
+        }
+
+
+        .services h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+
+
+        .servicegrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            max-width: 1200px;
+            column-gap: 30px;
+            row-gap: 30px;
+            margin: 0 auto; 
+            padding: 0 50px; 
+        }
+
+        .servicecard {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            text-align: left; 
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            background-color: white; 
+        }
+
+        .servicecard:hover {
+
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            border-color: dodgerblue; 
+        }
+
+
+        .service-icon {
+            font-size: 50px; 
+            color: dodgerblue; 
+            margin-bottom: 15px;
+        }
+
+        .servicecard h2 {
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .servicecta {
+            background-color: white;
+            color: dodgerblue;
+            border: 1px solid dodgerblue;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px; 
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        /* Updated hover effect for the CTA */
+        .servicecard:hover > .servicecta {
+            background-color: dodgerblue;
+            color: white;
+            border-color: dodgerblue;
+        }
+
+
+
+
+        .whyme {
+            padding: 60px;
+        }
+
+
+        .whyheading {
+            text-align: center;
+            font-size: 50px;
+            color: dodgerblue;
+        }
+
+        /* --- NEW STYLES for WHY CHOOSE ME SECTION --- */
+
+            .why-card-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                padding: 0 50px;
+                margin: 40px auto;
+                max-width: 1200px;
+            }
+
+            .why-card {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; /* Alignment is key: Left align content */
+                text-align: left;
+                padding: 30px;
+                border: 1px solid #eee;
+                border-radius: 10px;
+                /* Updated shadow for depth */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            }
+
+            .why-card:hover {
+                transform: translateY(-8px); /* More pronounced lift effect */
+                /* Deeper shadow on hover */
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+                border-color: dodgerblue; 
+            }
+
+            .why-icon {
+                font-size: 45px; /* Slightly smaller icon */
+                color: dodgerblue;
+                margin-bottom: 10px;
+            }
+
+            .why-card h3 {
+                font-size: 20px;
+                margin-top: 0;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .why-card p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #555;
+            }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .lastcta{
+          display: inline-block;
+          margin-top: 20px;
+          justify-content: center;
+          text-decoration: none;
+          color: #111111;
+          gap: 10px;
+          padding: 10px;
+          background-color: dodgerblue;
+          border: 1px solid #f9f9f9;
+          border-radius: 10px;
+          color: #f9f9f9;
+          margin-bottom: 30px;
+          margin-left: 30px;
+        }
+
+        .lastcta:hover{
+            color: dodgerblue;
+            background: #f9f9f9;
+            border: 1px solid dodgerblue;
+        }
+
+        @media(min-width: 768px){
+            .mobile-header{
+                display: none;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+
+            .header{
+                background-image: url(images/hero-image.png);
+                background-color: #ddd;
+                background-blend-mode: multiply;
+                padding: 10px ;
+                height: 50px;
+            }
+
+            .logo{
+                color: dodgerblue;
+            }
+
+            .mobile-header{
+                font-size: 40px;
+                display: block;
+                color: dodgerblue;
+            }
+
+            .mobile-nav{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 150px;
+                height: 200px;
+                justify-content: center;
+                background-image: url(images/hero-image.png);
+                background-color: #ddd;
+                background-blend-mode: multiply;
+                border-radius: 8px;
+                gap: 20px;
+                box-shadow:  0px 2px 2px black;
+            }
+
+            .navul{
+                display: none;
+            }
+
+
+            .navlinks, .navlists{
+                color: dodgerblue;
+                font-weight: normal;
+            }
+
+            .hero-page {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 0 !important;
+                padding: 0 1.5rem !important;
+                justify-content: center;
+                box-sizing: border-box;
+                min-height: 99vh;
+                text-align: left;
+            }
+
+             .headline {
+                font-size: 40px;
+                line-height: 1.5;
+                max-width: 20ch;
+                margin-bottom: 1rem;
+                word-break: keep-all;
+                padding-right: 1rem;
+            }
+
+           
+
+            .subheading {
+                width: 98vw;
+                font-size: 14px;
+                padding-right: 1.5rem;
+                text-wrap: balance;
+                box-sizing: border-box;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+            .hero-cta {
+                width: 100px;
+                padding: 8px;
+                margin-top: 25px;
+            }
+
+             .servicegrid {
+              padding: 0 15px; 
+            }
+
+            .services {
+                padding: 30px 0; 
+            }
+            
+            .servicecard:nth-child(even) {
+                background-color: #f7f7f7; 
+            }
+
+            .servicetitle {
+                font-size: 30px;
+                line-height: 1.5;
+            }
+
+            .serviceintro {
+                font-size: 18px;
+            }
+
+            .servicegrid {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center;
+            }
+
+            .whyme {
+                padding: 0px;
+            }
+
+            .whyheading {
+                font-size: 40px;
+            }
+
+            .why-card-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 0px 30px;
+            }
+
+
+            .footercontent {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px;
+            }
+
+            .footeraddress {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px){
+            .lastcta{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <h1 class="logo">JK</h1>
+        <ul class="mobile-nav navul">
+            <li class="navlists"><a href="jk.html" class="navlinks">Home</a></li>
+            <li class="navlists"><a href="about.html" class="navlinks">About</a></li>
+            <li class="navlists"><a href="service.html" class="navlinks">Services</a></li>
+            <li class="navlists"><a href="contact.html" class="navlinks">Contact</a></li>
+        </ul>
+     <span class="mobile-header">&#9776;</span>
+    </nav>
+
+    <main>
+        <section class="hero-page">
+            <h2 class="headline">
+                Transforming Ideas into <span style="white-space: nowrap;">Digital Reality</span>
+            </h2>
+            <p class="subheading">
+                I help businesses and startups bring their vision to life by building robust, scalable, and elegant web
+                solutions that solve real-world problems.
+            </p>
+            <a href="#" class="hero-cta"> Get Started</a>
+        </section>
+        <section class="services">
+            <h2 class="servicetitle">My specialties</h2>
+            <p class="serviceintro">I offer custom services according to your brand’s objectives and identity</p>
+            <div class="gridcontainer">
+                <div class="servicegrid">
+                    <div class="servicegrid">
+    <div class="servicecard">
+        <i class="fa fa-code service-icon"></i>
+        <h2>Responsive design</h2>
+        <p>I create stunning, userfriendly websites that adapt to various devices ensuring optimal user experience and engagement</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+
+    <div class="servicecard">
+        <i class="fa fa-line-chart service-icon" aria-hidden="true"></i>
+        <h2>SEO Optimization</h2>
+        <p>Boost online visibility, drive organic traffic, and increase conversions with tailored SEO strategies and techniques.</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+
+    <div class="servicecard">
+        <i class="fa fa-wordpress service-icon"></i>
+        <h2>WordPress Development</h2>
+        <p>I build fast, secure, and scalable Wordpress websites with customizable themes, plugins, and functionality for business growth.</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+    
+    <div class="servicecard">
+        <i class="fa fa-html5 service-icon" aria-hidden="true"></i>
+        <h2>Web Development</h2>
+        <p>I create visually appeaaling, user-friendly interfaces with HTML, CSS and JavaScript crafting engaging digital experiences .</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+
+    <div class="servicecard">
+        <i class="fa fa-handshake-o service-icon"></i>
+        <h2>Conversion Strategy</h2>
+        <p>I maximize website potential with data-driven strategies that boost user engagement, conversion rates, and revenue growth.</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+
+    <div class="servicecard">
+        <i class="fa fa-bar-chart service-icon" aria-hidden="true"></i>
+        <h2>Social Media Ads</h2>
+        <p>I Amplify brand reach, engagement, conversions with targeted social media ads that drive website traffic and sales.</p>
+        <a href="contact.html" class="servicecta">Get Started</a>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+       <section class="whyme">
+    <h2 class="whyheading">Why Choose Me</h2>
+    
+    <div class="why-card-grid">
+        
+        <div class="why-card">
+            <i class="fa fa-lightbulb-o why-icon"></i>
+            <h3>Custom & Tailored Solutions</h3>
+            <p>I craft web solutions that meet your unique needs and goals, ensuring your online presence accurately reflects your brand and drives results.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa fa-rocket why-icon"></i>
+            <h3>Cutting-Edge Technology</h3>
+            <p>I leverage the latest frameworks (React, Angular, Vue.js) to build fast, scalable, and secure websites that stay ahead of the curve.</p>
+        </div>
+        
+        <div class="why-card">
+            <i class="fa fa-street-view why-icon"></i>
+            <h3>User-Centric Design (UX)</h3>
+            <p>My design prioritizes user experience, creating intuitive and engaging interfaces that drive conversion and leave a lasting impression.</p>
+        </div>
+        
+        <div class="why-card">
+            <i class="fa fa-clock-o why-icon"></i>
+            <h3>Reliable Timeline Delivery</h3>
+            <p>I understand the importance of meeting deadlines. You can trust me to get your website launched and live with a proven track record of on-time delivery.</p>
+        </div>
+        
+        <div class="why-card">
+            <i class="fa fa-life-ring why-icon"></i>
+            <h3>Dedicated Ongoing Support</h3>
+            <p>I provide dedicated support and maintenance to ensure your website stays up-to-date, secure, and continues to meet your evolving business needs.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa fa-line-chart why-icon"></i>
+            <h3>Built-in SEO Optimization</h3>
+            <p>My websites are optimized for search engines, improving your online visibility, driving organic traffic, and increasing your chances of ranking higher.</p>
+        </div>
+        
+        <div class="why-card">
+            <i class="fa fa-mobile why-icon"></i>
+            <h3>Flawless Responsive Design</h3>
+            <p>With mobile-friendly and responsive designs, your website will adapt seamlessly to all devices, ensuring a great user experience and increased conversion.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa fa-lock why-icon"></i>
+            <h3>Robust Security Practices</h3>
+            <p>I follow secure coding practices to protect your website from vulnerabilities, ensuring your information and your users' data are safe and secure.</p>
+        </div>
+        
+        <div class="why-card">
+            <i class="fa fa-database why-icon"></i>
+            <h3>Flexible CMS Integration</h3>
+            <p>With expertise in CMS like WordPress, I can help you manage your content with ease, making updates and changes to your site a breeze.</p>
+        </div>
+        
+    </div>
+    
+    <a href="contact.html" class="lastcta"> Reachout <span>&rarr;</span></a>
+</section>
+        <footer>
+            <section class="footercontent">
+                <div class="footernavs">
+                    <h2 class="footertitle">Quick links</h2>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="jk.html">Home</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="about.html">About</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="service.html">Services</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="contact.html">contact</a></div>
+                </div>
+
+                <div class="footercontactlinks">
+                    <h2 class="footertitle">Socials</h2>
+                    <div class="sociallinkscontainer"><i class="fa fa-whatsapp footerws"></i><a href=""
+                            class="sociallinks">Whatsapp</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-facebook footerfb"></i><a href=""
+                            class="sociallinks"> facebook</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-linkedin footerin"></i><a href=""
+                            class="sociallinks">linkedin</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-instagram footerig"></i><a href=""
+                            class="sociallinks">instagram</a></div>
+                </div>
+
+                <div class="footeraddress">
+                    <h2 class="footertitle">Contact Address</h2>
+                    <div class="addresscontainer"><i class="fa fa-map-marker address"></i><a href=""
+                            class="homeaddress"><strong>Add:</strong> Cornerstone Ozuoba P/H Rivers Nig.</a></div>
+                    <div class="addresscontainer"><i class="fa fa-phone address"></i><a href=""><strong>Phone
+                                Number:</strong> +2347040604118</a></div>
+                    <div class="addresscontainer"><i class="fa fa-envelope address"></i><a
+                            href="mailto:kj4454084@gmail.com"><strong>Email address:</strong> kj4454084@gmail.com</a>
+                    </div>
+                    <div class="addresscontainer"><i class="fa fa-globe address"></i><a
+                            href="https://jameskelvin.com"><Strong>Web Address:</Strong> www.jameskelvin.com</a></div>
+                </div>
+            </section>
+            <div>
+                <p class="copyrighttxt">&COPY James Kelvin 2024</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.mobile-header');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('navul');
+        });
+
+       
+    </script>
+</body>
+
+</html>
+</main>
+</body>
+
+</html>

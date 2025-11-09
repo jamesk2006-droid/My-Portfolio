@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>james kelvin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eae6be9be1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: 'fredoka';
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 20px;
+            background-color: #ddd;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            font-size: 45px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .navul,
+        .navli,
+        .navlink {
+            display: flex;
+            text-decoration: none;
+            gap: 20px;
+            color: black;
+            font-weight: bold;
+            transition: hover, 0.3s;
+        }
+
+        .navlink:hover,
+        .navli:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: dodgerblue;
+        }
+
+        .landingpage {
+            display: flex;
+            background-color: #ddd;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        .leftsection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            text-align: left;
+            padding-left: 50px;
+
+        }
+
+        .intro {
+            color: #333;
+            font-size: 45px;
+            line-height: 0.5;
+            font-family: 'fredoka', sans-serif;
+            animation: fadeInFromBottom 1s ease-in;
+
+        }
+
+        .peace-emoji{
+            color:#DAA520;
+            font-size: 50px;
+        }
+
+        .name {
+            font-size: 70px;
+            font-family: 'fredoka', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            animation: fadeInFromBottom 1s ease-in;
+
+
+
+        }
+
+        .tagline {
+            font-size: 40px;
+            font-family: 'fredoka', sans-serif;
+            margin-top: 0;
+            color: #333;
+            margin-bottom: 30px;
+            animation: fadeInFromBottom 1s ease-in;
+
+        }
+
+        @keyframes fadeInFromBottom {
+                from {
+                opacity: 0;
+                transform: translateY(30px); 
+                }
+
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+        .tagline strong {
+            width: 100px;
+            background-color: #ddd;
+            padding: 10px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            animation: fadeInFromLeft 1s ease-in;
+        }
+
+        .cta1 {
+            width: 150px;
+            padding: 15px;
+            border: solid 1px #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+  
+        }
+
+        .cta2 {
+            width: 150px;
+            padding: 15px;
+            border: solid 1px dodgerblue;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #333;
+            background-color: white;
+            font-weight: bold;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta1:hover {
+            background: linear-gradient(to right, #87ceeb, #add8e6);
+            background-size: 400% 400%;
+            animation: gradient 0.5s ease;
+        }
+
+        .cta2:hover {
+            background: linear-gradient(to right, #fff, #ddd);
+            background-size: 400% 400%;
+            animation: gradient 2s ease infinite;
+        }
+
+        @keyframes fadeInFromLeft {
+            from {
+            opacity: 0;
+            transform: translateX(-50px);
+            }
+            to {
+            opacity: 1;
+            transform: translateX(0); 
+            }
+         }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .socialscontainer {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: start;
+            animation: fadeInFromLeft 1s ease-in;
+        }
+
+        .ig,
+        .in,
+        .ws,
+        .gt,
+        .fb,
+        .serviceicon {
+            font-size: 50px !important;
+            transition: hover, 0.5s;
+            color: black;
+
+        }
+
+        .fb:hover {
+            color: #1877f2;
+        }
+
+        .ws:hover {
+            color: #25d366;
+        }
+
+        .ig:hover {
+            color: #e4405f;
+        }
+
+        .in:hover {
+            color: dodgerblue;
+        }
+
+        .gt:hover {
+            color: indigo;
+        }
+
+
+        .rightsection {
+            display: flex;
+            flex: 1;
+        }
+
+        .rightsection img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .services {
+            padding-left: 50px;
+            margin-top: 60px;
+        }
+
+        .servicetitle {
+            text-align: center;
+            font-size: 60px;
+            font-family: 'fredoka' sans-serif;
+            margin-bottom: 30px;
+            font-weight: 500;
+
+        }
+
+
+        .serviceintro {
+            text-align: center;
+            width: 50%;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            display: flex;
+            justify-self: center;
+        }
+
+        .servicecardcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 20px;
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-self: center !important;
+            animation: fadeInFromBottom 1s ease-in;
+        }
+
+        .servicecard {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            border-radius: 8px;
+            text-align: left;
+            padding: 25px;
+            box-shadow: 1px 1px 2px black;
+            row-gap: 20px;
+            transition: hover, 0.5s;
+
+
+        }
+
+        .servicecard:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+        }
+
+       .servicecard:hover>.fa {
+            color: dodgerblue;
+        }
+
+        .servicecard img {
+            width: 70px;
+            border-radius: 50%;
+            border: groove 1px #333;
+        }
+
+        .servicelink {
+            color: black;
+            text-decoration: none;
+            font-weight: 500px;
+        }
+
+        .servicecard:hover>.servicelink {
+            color: dodgerblue;
+        }
+
+
+        .aboutme {
+            margin-top: 50px;
+            background-color: #ddd;
+            display: flex;
+            max-width: 100vw;
+            gap: 30px;
+            overflow: hidden;
+            padding: 50px;
+        }
+
+        .profilepiccontainer img {
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .abouttxtcontainer {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 0px 50px;
+            flex: 1;
+            justify-content: center;
+
+        }
+
+        .abouttxtcontainer p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+            font-weight: 500;
+            flex-grow: 0;
+            text-wrap: none;
+        }
+
+        .abouttxtcontainer h2 {
+            font-size: 50px;
+        }
+
+        .abouttitle span {
+            background-color: #1e8cbe;
+            padding: 5px;
+            border-top-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
+
+        .more {
+            margin-top: 10px;
+            font-weight: bold;
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+
+        #projects {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #projects p {
+            max-width: 100%; 
+            line-height: 1.6;
+            font-size: 16px;
+            color: #555;
+            text-align: left;
+        }
+
+        .project-card-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+            padding: 0 50px;
+        }
+
+        .project-card {
+            max-width: 900px; 
+            width: 100%;
+            padding: 40px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-align: left; 
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            border-color: dodgerblue;
+        }
+
+        
+        .project-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .project-details-grid h4 {
+            color: dodgerblue; 
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .project-details-grid ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        .project-details-grid .projectli {
+            font-size: 15px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .projectlink {
+            display: inline-block;
+            margin-top: 30px !important; 
+            text-decoration: none;
+            background: dodgerblue;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .projectimggrid{
+            display: inline-grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-self: center;
+            padding: 30px;
+        }
+
+        .projectimggrid img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .link {
+            display: flex;
+            background-color: dodgerblue;
+            justify-self: center;
+            margin-top: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border: solid 1px #333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            margin-top: 60px;
+            padding-top: 30px;
+        }
+
+        .footercontent {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footernavs,
+        .footeraddress,
+        .footercontactlinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 16pxpx;
+        }
+
+        .footertitle {
+            color: dodgerblue;
+        }
+
+        .navcontainer,
+        .sociallinkscontainer,
+        .addresscontainer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            vertical-align: center;
+        }
+
+        .linkedincontainer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            vertical-align: center;
+        }
+
+        .arrow {
+            color: #ccc;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .footerws {
+            color: #25d366;
+            font-size: 30px;
+        }
+
+        .footerfb {
+            color: #1877f2;
+            font-size: 30px;
+        }
+
+        .footerin {
+            color: #1877f2;
+            font-size: 30px;
+        }
+
+        .footerig {
+            color: #e4405f;
+            font-size: 30px;
+        }
+
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .address {
+            color: tomato;
+            font-size: 30px;
+        }
+
+        .copyrighttxt {
+            text-align: center;
+            font-size: 16px;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        @media(min-width: 768px) {
+            .mobile-header {
+                display: none;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            nav {
+                background-image: url(images/header-img.png);
+                background-blend-mode: multiply;
+                background-color: #ddd;
+                border: none;
+                overflow: hidden !important;
+                margin: 0 !important;
+                box-sizing: border-box;
+                padding: 1px 10px;
+                height: 60px;
+            }
+
+            .mobile-header {
+                display: block;
+                font-size: 40px;
+                cursor: pointer;
+                color: dodgerblue;
+            }
+
+            .mobile-nav {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 40px !important;
+                right: 0;
+                width: 150px;
+                height: 200px;
+                justify-content: center;
+                gap: 20px;
+                overflow: hidden !important;
+                background-image: url(images/header-img.png);
+                background-blend-mode: multiply;
+                background-color: #ddd;
+                box-shadow: 0px 2px 5px black;
+                border-radius: 8px;
+            }
+
+            .logo{
+                color: dodgerblue;
+            }
+
+            .navul {
+                display: none;
+            }
+
+            .navlink,
+            .navli {
+                color: dodgerblue;
+                font-weight: normal;
+            }
+
+            .landingpage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(images/profile-pc.png);
+                background-position: left;
+                background-repeat: no-repeat;
+                background-color: #ddd;
+                background-blend-mode: multiply;
+                height: 100vh !important;
+                justify-content: center;
+                margin: 0 !important;
+                box-sizing: border-box;
+
+            }
+
+
+            .leftsection {
+                width: 80%;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+
+            .socialscontainer {
+                gap: 15px;
+                margin-top: 40px;
+                justify-content: space-evenly;
+                padding-left: 5px;
+            }
+
+            .ig,
+            .in,
+            .ws,
+            .gt,
+            .fb,
+            .serviceicon {
+                font-size: 40px !important;
+            }
+
+            .rightsection {
+                width: 20%;
+            }
+
+            .rightsection img {
+                display: none;
+            }
+
+            .intro {
+                color: #111111;
+                font-size: 40px;
+                margin-bottom: 10px;
+                font-family: fredoka;
+                animation: fadeInFromBottom 1s ease-in-out;
+            }
+
+            .name {
+                color: dodgerblue;
+                font-weight: 550;
+                font-size: 50px;
+                margin-bottom: 15px;
+                font-family: fredoka;
+                white-space: nowrap;
+                width: 90vw;
+                margin-bottom: 10px !important;
+                animation: fadeInFromBottom 1s ease-in-out;
+            }
+
+            .tagline {
+                color: #111111;
+                line-height: 2;
+                font-size: 35px;
+                font-family: fredoka;
+                animation: fadeInFromBottom 1s ease-in-out;
+            }
+
+            @keyframes fadeInFromBottom {
+                from {
+                opacity: 0;
+                transform: translateY(30px); 
+                }
+
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            .services {
+                padding: 10px !important;
+                box-sizing: border-box;
+            }
+
+            .servicetitle {
+                font-size: 35px;
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-color: dodgerblue;
+            }
+
+            .serviceintro {
+                text-align: center;
+                width: 100%;
+                line-height: 1.5;
+            }
+
+            .servicecardcontainer {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .servicecard{
+                width: 80%;
+            }
+
+
+
+            .aboutme {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 0;
+            }
+
+            .abouttxtcontainer {
+                padding: 30px;
+            }
+
+            .abouttitle {
+                font-size: 35px;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            .abouttxtcontainer p {
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+            .profilepiccontainer {
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            .profilepic {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            #projects {
+               padding: 10px !important;
+            }
+
+            .projecttitle {
+                text-decoration: underline;
+                text-decoration-color: dodgerblue;
+                text-align: center;
+            }
+
+             .project-card-container {
+                padding: 0 15px;
+             }
+
+             .project-card {
+                padding: 20px;
+            }
+
+           .project-details-grid {
+                grid-template-columns: 1fr; 
+                gap: 20px;
+             }
+
+          .project-details-grid ul {
+               padding-left: 25px;
+            }
+
+            #projects {
+                padding: 30px;
+            }
+
+            .pfirstdiv {
+                padding-bottom: 0px;
+            }
+
+            .pseconddiv {
+                padding-top: 0 !important;
+            }
+
+            .results {
+                margin-top: 0px;
+            }
+
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0px;
+            }
+
+            .project p {
+                max-width: 100vw !important;
+            }
+
+            .projectimggrid {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .footercontent {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 30px;
+                gap: 50px;
+            }
+
+            .footeraddress {
+                display: none;
+            }
+
+            .arrow {
+                color: #1877f2;
+            }
+
+            .footertitle {
+                text-align: left;
+            }
+
+            .copyrighttxt {
+                text-align: left;
+                margin-left: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">JK</h1>
+        <ul class="navul mobile-nav">
+            <li class="navli"><a href="jk.html" class="navlink">Home</a></li>
+            <li class="navli"><a href="about.html" class="navlink">About</a></li>
+            <li class="navli"><a href="service.html" class="navlink">Services</a></li>
+            <li class="navli"><a href="contact.html" class="navlink">Contact</a></li>
+        </ul>
+        <span class="mobile-header">&#9776;</span>
+    </nav>
+
+    <main>
+        <section class="landingpage">
+            <div class="leftsection">
+                <span class="intro"><i class="dash"></i>Hello I Am <span class="peace-emoji">&#9996;</span></span>
+                <p class="name">James Kelvin</p>
+                <p class="tagline">Your Partner In Digital Success</p>
+                <div class="button-container">
+                    <a href="#" class="cta1">Text Me</a>
+                    <a href="#" class="cta2" onclick="
+                    alert('hello world');">My Services</a>
+                </div>
+                <div class="socialscontainer">
+                    <a href="#"><i class="fa fa-instagram ig"></i></a>
+                    <a href="#"><i class="fa fa-facebook fb"></i></a>
+                    <a href="#"><i class="fa fa-linkedin in"></i></a>
+                    <a href="#"><i class="fa fa-github gt"></i></a>
+                    <a href="#"> <i class="fa fa-whatsapp ws"></i></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/profile-pc.png" alt="james kelvin's profile pic">
+            </div>
+        </section>
+        <section class="services">
+            <div>
+                <h1 class="servicetitle">My <span>Specialties</span></h1>
+                <p class="serviceintro">Every business has an identity, and your website should reflect that. I build
+                    websites tailored to your
+                    brand&apos;s personality and goals</p>
+            </div>
+            <div class="servicecardcontainer">
+                <div class="servicecard">
+                    <i class="fa fa-code serviceicon"></i>
+                    <h2>Responsive Design</h2>
+                    <a href="service.html" class="servicelink">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="servicecard">
+                    <i class="fa fa-line-chart serviceicon" aria-hidden="true"></i>
+                    <h2>SEO</h2>
+                    <a href="service.html" class="servicelink">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="servicecard">
+                    <i class="fa fa-wordpress serviceicon"></i>
+                    <h2>WordPress</h2>
+                    <a href="service.html" class="servicelink">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="servicecard">
+                    <i class="fa fa-html5 serviceicon" aria-hidden="true"></i>
+                    <h2>Web Developpment</h2>
+                    <a href="service.html" class="servicelink">Learn More <span>&rarr;</span></a>
+                </div>
+
+                <div class="servicecard">
+                    <i class="fa fa-handshake-o serviceicon"></i>
+                    <h2>Conversion Strategy</h2>
+                    <a href="service.html" class="servicelink">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="servicecard">
+                    <i class="fa fa-bar-chart serviceicon" aria-hidden="true"></i>
+                    <h2>Social media ads</h2>
+                    <a href="service.html" class="servicelink">Learn more <span>&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="aboutme">
+            <div class="profilepiccontainer">
+                <img src="images/profile-pc.png" alt="james kelvin" class="profilepic">
+            </div>
+            <div class="abouttxtcontainer">
+                <h2 class="abouttitle"><span>About</span> me</h2>
+                <p>
+                    As a web developer, I am passionate about crafting seamless and intuitive digital experiences. My
+                    expertise lies not only in writing clean, efficient code and building robust web applications, but
+                    also in understanding the human element behind every click and scroll.
+                </p>
+                <p>
+                    With a background in psychology, I bring a unique perspective to my work, focusing on user behavior,
+                    cognitive processes, and the emotional impact of design.
+                    I believe that the most effective websites are those that not only function flawlessly but also
+                    resonate deeply with their users, fostering engagement and delivering genuine value. <a
+                        href="about.html" class="more">Learn more <span>&rarr;</span></a>
+                </p>
+            </div>
+        </section>
+       <section id="projects">
+            <h2 class="projecttitle">My Projects</h2>
+            
+            <div class="project-card-container"> 
+                <div class="project-card"> 
+                    <h3 class="ph3">Quilox Restaurant</h3>
+                    <p>
+                        <strong>Description:</strong> Custom Wordpress website for a local Restaurant, designed to
+                        showcase their menu and provide a seamless
+                        user experience.
+                    </p>
+                    
+                    <div class="project-details-grid">
+                        <div>
+                            <h4 class="pheading">Key Features</h4>
+                            <ul class="projectul">
+                                <li class="projectli">Custom theme design</li>
+                                <li class="projectli">Search engine optimization</li>
+                                <li class="projectli">Responsive design for mobile users</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="pheading results">Results</h4>
+                            <p>Increased website traffic by 30% and improved user engagement through streamlined navigation</p>
+                            <h4 class="pheading">Skills Used</h4>
+                            <ul class="projectul">
+                                <li class="projectli">Wordpress Development</li>
+                                <li class="projectli">Theme Customization</li>
+                                <li class="projectli">Plugin Integration</li>
+                                <li class="projectli">Responsive Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <a href="https://jameskelvin.com.ng" class="projectlink">Visite site <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="projectimggrid">
+                <img src="images/mobile-mockup.png" alt="quilox restaurant">
+                <img src="images/laptop-mockup.png" alt="james kelvin">
+                <img src="images/desktop-mockup.png" alt="web developer">
+            </div>
+            
+            </section>
+        <footer>
+            <section class="footercontent">
+                <div class="footernavs">
+                    <h2 class="footertitle">Quick links</h2>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="jk.html">Home</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="about.html">About</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="service.html">Services</a></div>
+                    <div class="navcontainer"><span class="arrow">&rarr;</span><a href="contact.html">contact</a></div>
+                </div>
+
+                <div class="footercontactlinks">
+                    <h2 class="footertitle">Socials</h2>
+                    <div class="sociallinkscontainer"><i class="fa fa-whatsapp footerws"></i><a href=""
+                            class="sociallinks">Whatsapp</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-facebook footerfb"></i><a href=""
+                            class="sociallinks"> facebook</a></div>
+                    <div class="linkedincontainer"><i class="fa-brands fa-square-linkedin footerin"></i><a href=""
+                            class="sociallinks">linkedin</a></div>
+                    <div class="sociallinkscontainer"><i class="fa fa-instagram footerig"></i><a href=""
+                            class="sociallinks">instagram</a></div>
+                </div>
+
+                <div class="footeraddress">
+                    <h2 class="footertitle">Contact Address</h2>
+                    <div class="addresscontainer"><i class="fa fa-map-marker address"></i><a href=""
+                            class="homeaddress"><strong>Add:</strong> Cornerstone Ozuoba P/H Rivers Nig.</a></div>
+                    <div class="addresscontainer"><i class="fa fa-phone address"></i><a href=""><strong>Phone
+                                Number:</strong> +2347040604118</a></div>
+                    <div class="addresscontainer"><i class="fa fa-envelope address"></i><a
+                            href="mailto:kj4454084@gmail.com"><strong>Email address:</strong> kj4454084@gmail.com</a>
+                    </div>
+                    <div class="addresscontainer"><i class="fa fa-globe address"></i><a
+                            href="https://jameskelvin.com"><Strong>Web Address:</Strong> www.jameskelvin.com</a></div>
+                </div>
+            </section>
+            <div>
+                <p class="copyrighttxt">&COPY 2024<a href="https://jameskelvin.com">James C Kelvin</a></p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.mobile-header');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            console.log('hamburger clicked');
+            mobileNav.classList.toggle('navul');
+        });
+    </script>
+</body>
+
+</html>

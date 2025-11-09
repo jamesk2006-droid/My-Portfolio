@@ -1,0 +1,90 @@
+  footer{
+            background-color: #333;
+            margin-top: 0px;
+            padding-top: 30px;
+        }
+
+        .footercontent{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footernavs, .footeraddress, .footercontactlinks{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 16pxpx;
+        }
+
+        .footertitle{
+            color: dodgerblue;
+        }
+
+        .navcontainer, .sociallinkscontainer, .addresscontainer{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            vertical-align: center;
+        }
+
+        .arrow{
+            color: #ccc;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .footerws{
+            color: #25d366;
+            font-size: 30px !important;
+        }
+
+        .footerfb{
+            color: #1877f2;
+            font-size: 30px !important;
+        }
+
+        .footerin{
+            color: #1877f2;
+            font-size: 30px !important;
+        }
+
+        .footerig{
+            color: #e4405f;
+            font-size: 30px !important;
+        }
+
+      
+        footer a{
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .address{
+            color: tomato;
+            font-size: 30px;
+        }
+
+        .copyrighttxt{
+            text-align: center;
+            font-size: 16px;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px){
+            .footercontent{
+                flex-direction: column;
+                gap: 20px;
+                align-items: start;
+                padding-left:30px ;
+            }
+
+            .addresscontainer{
+                display: none;
+            }
+        }
